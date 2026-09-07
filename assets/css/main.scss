@@ -1,0 +1,39 @@
+---
+---
+ 
+@charset "utf-8";
+ 
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+ 
+/* ---- custom overrides ---- */
+ 
+/* Widen the overall page and masthead so content uses more of a wide screen */
+.page,
+.masthead__inner-wrap,
+.archive {
+  max-width: 1400px;
+}
+ 
+.page__content,
+.page__hero,
+.page__related {
+  max-width: 100%;
+}
+ 
+/* Give a touch more breathing room on very wide screens */
+@media (min-width: 1600px) {
+  .page,
+  .masthead__inner-wrap {
+    max-width: 1600px;
+  }
+}
+ 
+/* Make sure our custom right-hand widget behaves on tablets/phones */
+@media (max-width: 900px) {
+  .blog-side-widget {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+}
