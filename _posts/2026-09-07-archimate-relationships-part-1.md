@@ -8,7 +8,7 @@ mermaid: true
 
 Welcome to Part 1 of my 10-part series on ArchiMate relationships! 
 
-Based on my experience working as a Solution Architect for **SWISS International Air Lines** and as part of the **Lufthansa Group Enterprise Architecture** team, I want to show how to apply ArchiMate practically in the aviation domain.
+Based on my experience working as a Solution Architect for **SWISS International Air Lines** and as part of the **Lufthansa Group Enterprise Architecture** group, I want to show how to apply ArchiMate practically in the aviation domain.
 
 Today, we look at the **Serving Relationship**. This relationship shows that an element (like an IT system or service) serves or helps another element (like a business process).
 
