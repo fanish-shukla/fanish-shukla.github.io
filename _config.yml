@@ -43,6 +43,10 @@ footer:
       icon: "fas fa-fw fa-rss-square"
       url: "/feed.xml"
 
+# --- Comments Configuration ---
+comments:
+  provider: "cusdis" # or "custom"
+
 # --- Defaults applied to every blog post ---
 defaults:
   - scope:
