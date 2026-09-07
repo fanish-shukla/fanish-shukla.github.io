@@ -26,9 +26,17 @@ A collection is a themed series of posts, meant to be read in order. Pick one be
 
 <div class="collection-card">
   <h2>ArchiMate Relationships</h2>
-  <p>An ongoing series explaining ArchiMate 3.0 relationship types one at a time, each with a real ArchiMate diagram and an aviation-domain example.</p>
+  <p>A 10-part series explaining ArchiMate 3.2 relationship types one at a time, each with a real ArchiMate diagram and an aviation-domain example.</p>
   <ol>
-    <li><a href="{{ '/aviation/archimate/2026/09/07/archimate-relationships-part-1-serving.html' | relative_url }}">Part 1: The Serving Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/07/07/archimate-relationships-part-1-serving.html' | relative_url }}">Part 1: The Serving Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/07/14/archimate-relationships-part-2-composition.html' | relative_url }}">Part 2: The Composition Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/07/21/archimate-relationships-part-3-realization.html' | relative_url }}">Part 3: The Realization Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/07/28/archimate-relationships-part-4-aggregation.html' | relative_url }}">Part 4: The Aggregation Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/08/05/archimate-relationships-part-5-assignment.html' | relative_url }}">Part 5: The Assignment Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/08/12/archimate-relationships-part-6-access.html' | relative_url }}">Part 6: The Access Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/08/19/archimate-relationships-part-7-triggering.html' | relative_url }}">Part 7: The Triggering Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/08/26/archimate-relationships-part-8-flow.html' | relative_url }}">Part 8: The Flow Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/09/02/archimate-relationships-part-9-specialization.html' | relative_url }}">Part 9: The Specialization Relationship</a></li>
+    <li><a href="{{ '/archimate/2026/09/09/archimate-relationships-part-10-association.html' | relative_url }}">Part 10: The Association Relationship</a></li>
   </ol>
-  <p><em>More parts coming soon.</em></p>
 </div>
