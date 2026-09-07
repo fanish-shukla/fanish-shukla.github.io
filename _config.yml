@@ -10,3 +10,5 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+# Enable excerpt parsing for feeds
+excerpt_separator: "\n\n"
