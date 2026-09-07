@@ -22,10 +22,12 @@ Here is the exact ArchiMate 3.0 model:
 @startuml
 !include <archimate/Archimate>
 
+' Elements
 Archimate_ApplicationService(appService, "Flight Information Service")
-Archimate_BusinessProcess(bizProcess, "Gate Boarding Process")
+Archimate_BusinessProcess(busProc, "Boarding Process")
 
-Rel_Serving(appService, bizProcess, "Serves")
+' Relationship
+Rel_Serving(appService, busProc, "Serves")
 @enduml
 ```
 
