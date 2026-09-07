@@ -10,6 +10,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
 
 markdown: kramdown
 paginate: 5
