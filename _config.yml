@@ -1,26 +1,15 @@
 title: Fanish Shukla
 tagline: Enterprise Architect | Cloud & Technology Strategy
 url: "https://fanish.shukla.eu"
-baseurl: ""
-
 author: Fanish Shukla
-description: "Enterprise Architecture, Cloud Strategy, and Systems Engineering by Fanish Shukla."
+description: "Enterprise Architecture, Cloud Strategy, and Aviation Systems."
 
-theme: jekyll-theme-chirpy
+theme: minima
 
-# Essential Chirpy plugins
+header_pages:
+  - index.md
+
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-archives
-  - jekyll-include-cache
-
-# Layout settings
-markdown: kramdown
-highlighter: rouge
-
-# Chirpy specific settings
-lang: en
-timezone: Europe/Zurich
