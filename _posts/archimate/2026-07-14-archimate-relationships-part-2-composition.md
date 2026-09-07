@@ -1,7 +1,7 @@
 ---
 title: "ArchiMate Relationships Part 2: The Composition Relationship in Aviation"
 date: 2026-07-14
-categories: [aviation, archimate]
+categories: [archimate]
 tags: [archimate, enterprise-architecture, aviation, solution-architecture]
 excerpt: "Exploring the Composition relationship in ArchiMate through an airline's departure process, detailing structural whole-part dependencies."
 header:

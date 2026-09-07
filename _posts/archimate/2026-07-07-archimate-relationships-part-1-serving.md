@@ -1,7 +1,7 @@
 ---
 title: "ArchiMate Relationships Part 1: The Serving Relationship in Aviation"
 date: 2026-07-07
-categories: [aviation, archimate]
+categories: [archimate]
 tags: [archimate, enterprise-architecture, aviation, solution-architecture]
 excerpt: "Starting a 10-part series on ArchiMate relationships, explained with practical, multi-layer aviation architecture examples."
 header:
