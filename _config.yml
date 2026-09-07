@@ -21,20 +21,20 @@ author:
   name: "Fanish Shukla"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "Solution Architect, Enterprise Architecture. Former SWISS International Air Lines, Lufthansa Group EA team."
-  location: "Zürich Switzerland"
+  location: "Zürich, Switzerland"
   links:
-    - label: "fanishshukla"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/fanishshukla"
-    - label: "fanish@shukla.eu"
+      url: "https://linkedin.com/in/YOUR-LINKEDIN-HANDLE"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:fanish@shukla.eu"
-    - label: "+41782290666"
-      icon: "fab fa-fw fa-phone-square"
+      url: "mailto:you@fanish.shukla.eu"
+    - label: "Phone"
+      icon: "fas fa-fw fa-phone-square"
       url: "tel:+41782290666"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/fanish-shukla"  
+      url: "https://github.com/fanish-shukla"
 
 footer:
   links:
