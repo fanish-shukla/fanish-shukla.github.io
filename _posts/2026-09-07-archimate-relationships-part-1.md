@@ -18,8 +18,14 @@ At SWISS, smooth ground operations are critical. The **Flight Information System
 
 Here is how we model this in ArchiMate:
 
-```mermaid
-graph LR
-    A["Flight Information Service<br/>(Application Service)"] -->|Serves| B["Gate Boarding Process<br/>(Business Process)"]
-    style A fill:#d4e6f1,stroke:#1b4f72,stroke-width:2px
-    style B fill:#fcf3cf,stroke:#7d6608,stroke-width:2px
+```plantuml
+@startuml
+!include <archimate/Archimate>
+
+' Define ArchiMate 3.0 Elements
+Archimate_ApplicationService(appService, "Flight Information Service")
+Archimate_BusinessProcess(bizProcess, "Gate Boarding Process")
+
+' Define ArchiMate 3.0 Serving Relationship
+Rel_Serving(appService, bizProcess, "Serves")
+@enduml
