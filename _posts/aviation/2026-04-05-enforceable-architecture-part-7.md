@@ -4,6 +4,8 @@ date: 2026-04-05
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "Fitness functions and policies only matter if they actually run. Part 7 shows where to place them in the pipeline."
+header:
+  teaser: /assets/images/aviation/T7.png
 toc: false
 ---
 

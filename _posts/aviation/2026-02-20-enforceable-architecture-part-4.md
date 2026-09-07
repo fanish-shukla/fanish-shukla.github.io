@@ -4,6 +4,8 @@ date: 2026-02-20
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "One fitness function checks one rule. Policy-as-code lets you manage hundreds of rules across every team, consistently."
+header:
+  teaser: /assets/images/aviation/T4.png
 toc: false
 ---
 

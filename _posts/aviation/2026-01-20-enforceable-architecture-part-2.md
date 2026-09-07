@@ -4,6 +4,9 @@ date: 2026-01-20
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "Most Architecture Decision Records are just prose nobody re-reads. Part 2 shows how to turn them into specs a system can check."
+header:
+  teaser: /assets/images/aviation/T2.png
+
 toc: false
 ---
 

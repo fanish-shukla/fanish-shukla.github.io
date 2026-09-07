@@ -4,6 +4,8 @@ date: 2026-03-05
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "AI agents write code fast. Spec-Driven Development makes sure they write the right code, not just fast code."
+header:
+  teaser: /assets/images/aviation/T5.png
 toc: false
 ---
 

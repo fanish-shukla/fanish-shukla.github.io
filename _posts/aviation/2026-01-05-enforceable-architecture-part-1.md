@@ -4,8 +4,11 @@ date: 2026-01-05
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "A rule that only lives in a wiki diagram is not really a rule. Part 1 of a 10-part series on enforceable architecture, with aviation examples."
+header:
+  teaser: /assets/images/aviation/T1.png
 toc: false
 ---
+
 
 {% include blog-sidebar.html %}
 

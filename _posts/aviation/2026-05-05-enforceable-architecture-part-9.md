@@ -4,6 +4,8 @@ date: 2026-05-05
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "Architecture is not fixed forever. Part 9 shows how to change a rule safely, without breaking everything that depended on the old one."
+header:
+  teaser: /assets/images/aviation/T9.png
 toc: false
 ---
 

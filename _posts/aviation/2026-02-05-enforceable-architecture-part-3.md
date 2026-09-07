@@ -4,6 +4,9 @@ date: 2026-02-05
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "You already test your code. Part 3 explains fitness functions — the equivalent tests for your architecture."
+header:
+  teaser: /assets/images/aviation/T3.png
+
 toc: false
 ---
 

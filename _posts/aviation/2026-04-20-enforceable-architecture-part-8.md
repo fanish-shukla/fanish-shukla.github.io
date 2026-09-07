@@ -4,6 +4,8 @@ date: 2026-04-20
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "A walkthrough of one violation, from the moment code is written to the moment a fitness function catches it."
+header:
+  teaser: /assets/images/aviation/T8.png
 toc: false
 ---
 

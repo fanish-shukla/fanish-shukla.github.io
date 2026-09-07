@@ -4,6 +4,8 @@ date: 2026-03-20
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "Not every rule should be absolute. Part 6 shows how to build a fast, lightweight process for handling real exceptions."
+header:
+  teaser: /assets/images/aviation/T6.png
 toc: false
 ---
 

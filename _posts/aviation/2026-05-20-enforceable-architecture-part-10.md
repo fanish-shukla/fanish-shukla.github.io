@@ -4,6 +4,8 @@ date: 2026-05-20
 categories: [architecture, aviation]
 tags: [adr, fitness-functions, policy-as-code, spec-driven-development, agentic-engineering, enterprise-architecture, aviation]
 excerpt: "The final part of the series: how ADR-as-spec, fitness functions, policy-as-code, and review boards fit together into one working system."
+header:
+  teaser: /assets/images/aviation/T10.png
 toc: false
 ---
 
