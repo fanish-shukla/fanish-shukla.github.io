@@ -6,9 +6,6 @@ description: "Enterprise Architecture, Cloud Strategy, and Aviation Systems."
 
 theme: minima
 
-header_pages:
-  - index.md
-
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
