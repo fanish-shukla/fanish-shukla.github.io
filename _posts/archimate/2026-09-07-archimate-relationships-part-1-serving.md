@@ -32,6 +32,7 @@ In ArchiMate 3.2, the **Serving** relationship (formerly known as *Used By* in A
 
 To see how the Serving relationship works in practice, let's look beyond a simple 1:1 interaction and map a cross-layer scenario: **How a Departure Control System (DCS) serves airport gate operations.**
 
+{% include drawio.html path="/assets/images/archimate/archimate-serving-relationship.drawio" %}
 
 
 ### Breakdown by Layer:
