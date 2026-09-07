@@ -1,0 +1,19 @@
+title: Fanish Shukla
+tagline: Enterprise Architect | Cloud & Technology Strategy
+url: "https://fanish.shukla.eu"
+
+# SEO & Analytics
+author: Fanish Shukla
+description: "Insights on Cloud Architecture, Enterprise Strategy, Domain Knowledge, and Soft Skills for Tech Leaders."
+
+# Remote Theme Configuration
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+# Categories & Syntax Highlighting
+markdown: kramdown
+highlighter: rouge
