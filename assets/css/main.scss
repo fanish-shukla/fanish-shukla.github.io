@@ -137,3 +137,26 @@ $max-width:                  1500px !default;
     margin-left: 0;
   }
 }
+
+.collection-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 1.5em 1.8em;
+  margin-bottom: 2em;
+}
+
+.collection-card h2 {
+  margin-top: 0;
+}
+
+.collection-card ol {
+  padding-left: 1.3em;
+}
+
+.collection-card li {
+  margin-bottom: 0.4em;
+}
+
+.collection-card a {
+  color: var(--accent);
+}
