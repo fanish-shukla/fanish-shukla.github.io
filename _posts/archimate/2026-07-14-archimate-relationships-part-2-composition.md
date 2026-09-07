@@ -5,7 +5,7 @@ categories: [archimate]
 tags: [archimate, enterprise-architecture, aviation, solution-architecture]
 excerpt: "Exploring the Composition relationship in ArchiMate through an airline's departure process, detailing structural whole-part dependencies."
 header:
-  teaser: /assets/images/aviation/archimate-composition-relationship.svg
+  teaser: /assets/images/archimate/composition.png
 toc: false
 ---
 

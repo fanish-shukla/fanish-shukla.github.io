@@ -5,7 +5,7 @@ categories: [archimate]
 tags: [archimate, enterprise-architecture, aviation, solution-architecture]
 excerpt: "Starting a 10-part series on ArchiMate relationships, explained with practical, multi-layer aviation architecture examples."
 header:
-  teaser: /assets/images/aviation/archimate-serving-relationship.svg
+  teaser: /assets/images/archimate/serving.png
 toc: false
 ---
 
