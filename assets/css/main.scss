@@ -1,26 +1,26 @@
 ---
 ---
- 
+
 @charset "utf-8";
- 
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
- 
+
 /* ---- custom overrides ---- */
- 
+
 /* Widen the overall page and masthead so content uses more of a wide screen */
 .page,
 .masthead__inner-wrap,
 .archive {
   max-width: 1400px;
 }
- 
+
 .page__content,
 .page__hero,
 .page__related {
   max-width: 100%;
 }
- 
+
 /* Give a touch more breathing room on very wide screens */
 @media (min-width: 1600px) {
   .page,
@@ -28,12 +28,149 @@
     max-width: 1600px;
   }
 }
- 
-/* Make sure our custom right-hand widget behaves on tablets/phones */
-@media (max-width: 900px) {
-  .blog-side-widget {
-    float: none;
-    width: 100%;
-    margin-left: 0;
+
+/* ---- true 3-column layout: author (left) | content (middle) | widget (right) ---- */
+/* This targets Minimal Mistakes' core #main / .sidebar / .initial-content structure.
+   The widget itself is relocated here via JS in _includes/blog-sidebar.html. */
+
+#main.has-right-widget {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr) 280px;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1500px;
+}
+
+#main.has-right-widget .sidebar {
+  grid-column: 1;
+  float: none;
+  width: auto;
+}
+
+#main.has-right-widget .initial-content {
+  grid-column: 2;
+  float: none;
+  width: auto;
+}
+
+#main.has-right-widget #blog-side-widget {
+  grid-column: 3;
+  position: sticky;
+  top: 2rem;
+  float: none;
+  width: auto;
+  margin: 0;
+  align-self: start;
+}
+
+@media (max-width: 1024px) {
+  #main.has-right-widget {
+    display: block;
   }
+  #main.has-right-widget #blog-side-widget {
+    position: static;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+/* ---- dev-portal-inspired visual polish ---- */
+
+:root {
+  --accent: #1f6f78;
+}
+
+.page__content h2,
+.page__content h3 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.page__content h2 {
+  margin-top: 2.5em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.page__content a {
+  color: var(--accent);
+}
+
+.page__content code {
+  background: #f2f4f5;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.page__content pre {
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+
+.blog-side-widget {
+  padding: 1.2em 1.3em;
+  background: #fafbfb;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  font-size: 0.85em;
+}
+
+.blog-side-widget .widget-block + .widget-block {
+  margin-top: 1.4em;
+}
+
+.blog-side-widget h4 {
+  margin: 0 0 0.6em;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.4em;
+}
+
+.blog-side-widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-side-widget li {
+  margin-bottom: 0.5em;
+  line-height: 1.35;
+}
+
+.blog-side-widget li a {
+  color: #222;
+  text-decoration: none;
+}
+
+.blog-side-widget li a:hover {
+  color: var(--accent);
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.tag-pill {
+  background: #eef0f2;
+  border-radius: 999px;
+  padding: 0.2em 0.75em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333;
+}
+
+.tag-pill:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--primary {
+  background-color: var(--accent);
 }
