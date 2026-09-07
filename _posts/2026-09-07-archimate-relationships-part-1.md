@@ -20,7 +20,6 @@ Here is how we model this in ArchiMate:
 
 ```mermaid
 graph LR
-    A[Flight Information Service<br/><i>Application Service</i>] -->|Serves| B[Gate Boarding Process<br/><i>Business Process</i>]
-    
+    A["Flight Information Service<br/>(Application Service)"] -->|Serves| B["Gate Boarding Process<br/>(Business Process)"]
     style A fill:#d4e6f1,stroke:#1b4f72,stroke-width:2px
     style B fill:#fcf3cf,stroke:#7d6608,stroke-width:2px
