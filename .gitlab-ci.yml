@@ -2,10 +2,38 @@ image: ruby:3.2
 
 variables:
   JEKYLL_ENV: production
+  BUNDLE_PATH: vendor/bundle
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - vendor/bundle
+    - .bundle
+
+stages:
+  - diagrams
+  - build
+  - deploy
+
+# Only runs if you're using the .drawio-source approach above
+export-diagrams:
+  stage: diagrams
+  image: rlespinasse/drawio-export
+  script:
+    - drawio-export -f svg -o assets/diagrams assets/diagrams/*.drawio || echo "No .drawio files, skipping"
+  artifacts:
+    paths:
+      - assets/diagrams
+  rules:
+    - changes:
+        - assets/diagrams/*.drawio
 
 pages:
-  script:
+  stage: build
+  needs: ["export-diagrams"]
+  before_script:
     - bundle install
+  script:
     - bundle exec jekyll build -d public
   artifacts:
     paths:
