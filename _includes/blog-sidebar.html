@@ -28,21 +28,3 @@
   </div>
 
 </div>
-
-<script>
-(function () {
-  function moveWidget() {
-    var main = document.getElementById('main');
-    var widget = document.getElementById('blog-side-widget');
-    if (main && widget && widget.parentElement !== main) {
-      main.appendChild(widget);
-      main.classList.add('has-right-widget');
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', moveWidget);
-  } else {
-    moveWidget();
-  }
-})();
-</script>

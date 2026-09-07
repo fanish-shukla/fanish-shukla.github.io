@@ -3,78 +3,21 @@
 
 @charset "utf-8";
 
+/* ---- widen the site using the theme's own supported Sass variables ----
+   These use Sass's `!default`, so defining them here, BEFORE the theme's
+   partials are imported below, makes our values win without needing to
+   touch any theme file directly. This is the officially supported way
+   to customize Minimal Mistakes' layout width. */
+
+$right-sidebar-width-narrow: 200px !default;
+$right-sidebar-width:        280px !default;
+$right-sidebar-width-wide:   340px !default;
+$max-width:                  1500px !default;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
 /* ---- custom overrides ---- */
-
-/* Widen the overall page and masthead so content uses more of a wide screen */
-.page,
-.masthead__inner-wrap,
-.archive {
-  max-width: 1400px;
-}
-
-.page__content,
-.page__hero,
-.page__related {
-  max-width: 100%;
-}
-
-/* Give a touch more breathing room on very wide screens */
-@media (min-width: 1600px) {
-  .page,
-  .masthead__inner-wrap {
-    max-width: 1600px;
-  }
-}
-
-/* ---- true 3-column layout: author (left) | content (middle) | widget (right) ---- */
-/* This targets Minimal Mistakes' core #main / .sidebar / .initial-content structure.
-   The widget itself is relocated here via JS in _includes/blog-sidebar.html. */
-
-#main.has-right-widget {
-  display: grid;
-  grid-template-columns: 250px minmax(0, 1fr) 280px;
-  gap: 3rem;
-  align-items: start;
-  max-width: 1500px;
-}
-
-#main.has-right-widget .sidebar {
-  grid-column: 1;
-  float: none;
-  width: auto;
-}
-
-#main.has-right-widget .initial-content {
-  grid-column: 2;
-  float: none;
-  width: auto;
-}
-
-#main.has-right-widget #blog-side-widget {
-  grid-column: 3;
-  position: sticky;
-  top: 2rem;
-  float: none;
-  width: auto;
-  margin: 0;
-  align-self: start;
-}
-
-@media (max-width: 1024px) {
-  #main.has-right-widget {
-    display: block;
-  }
-  #main.has-right-widget #blog-side-widget {
-    position: static;
-    width: 100%;
-    margin-top: 2rem;
-  }
-}
-
-/* ---- dev-portal-inspired visual polish ---- */
 
 :root {
   --accent: #1f6f78;
@@ -108,7 +51,16 @@
   border: 1px solid #e3e3e3;
 }
 
+/* ---- recent posts / categories / tags widget ----
+   Kept as a contained float inside the content column (safe, no DOM
+   tricks). Now that the page itself is wider, this still reads as a
+   clear right-hand rail without any risk of overlapping the sidebar. */
+
 .blog-side-widget {
+  float: right;
+  clear: both;
+  width: 300px;
+  margin: 0 0 1.5em 2em;
   padding: 1.2em 1.3em;
   background: #fafbfb;
   border: 1px solid #e6e6e6;
@@ -142,13 +94,16 @@
   line-height: 1.35;
 }
 
+/* Fix: links here must look like links */
 .blog-side-widget li a {
-  color: #222;
-  text-decoration: none;
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 111, 120, 0.35);
+  text-underline-offset: 2px;
 }
 
 .blog-side-widget li a:hover {
-  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .tag-cloud {
@@ -173,4 +128,12 @@
 
 .btn--primary {
   background-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .blog-side-widget {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
 }
