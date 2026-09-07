@@ -1,13 +1,28 @@
 ---
-layout: home
 title: "Fanish Shukla"
-excerpt: "Solution Architect · Enterprise Architecture · Aviation"
-author_profile: true
+layout: single
 permalink: /
+author_profile: true
 ---
 
-Welcome. I'm Fanish Shukla, a Solution Architect with a background in enterprise architecture in the aviation industry, including work with SWISS International Air Lines and the Lufthansa Group Enterprise Architecture team.
+{% include blog-sidebar.html %}
 
-This blog is where I share practical, real-world enterprise architecture thinking — starting with a 10-part series on **ArchiMate relationships**, explained through aviation examples.
+Welcome. I'm a Solution Architect with a background in enterprise architecture in aviation, including work with SWISS International Air Lines and the Lufthansa Group Enterprise Architecture team. This blog shares practical enterprise architecture thinking, starting with a 10-part series on ArchiMate relationships.
 
-Browse the latest posts below, or filter by [tags]({{ site.baseurl }}/tags/) and [categories]({{ site.baseurl }}/categories/) in the sidebar.
+## Latest Posts
+
+{% for post in site.posts limit:5 %}
+### [{{ post.title }}]({{ post.url | relative_url }})
+
+<p style="color:#888; font-size:0.85em; margin-top:-0.5em;">{{ post.date | date: "%B %d, %Y" }}{% if post.categories.size > 0 %} · {{ post.categories | join: ", " }}{% endif %}</p>
+
+{{ post.excerpt | strip_html | truncatewords: 40 }}
+
+[Read more →]({{ post.url | relative_url }})
+
+---
+{% endfor %}
+
+<div style="text-align:center; margin-top:1.5em; clear:both;">
+  <a href="{{ '/posts/' | relative_url }}" class="btn btn--primary btn--large">Show More Posts</a>
+</div>

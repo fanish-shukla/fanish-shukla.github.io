@@ -1,0 +1,80 @@
+<div class="blog-side-widget">
+
+  <div class="widget-block">
+    <h4>Recent Posts</h4>
+    <ul>
+      {% for post in site.posts limit:5 %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="widget-block">
+    <h4>Categories</h4>
+    <ul>
+      {% for category in site.categories %}
+      <li><a href="{{ '/categories/' | relative_url }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="widget-block">
+    <h4>Tags</h4>
+    <div class="tag-cloud">
+      {% for tag in site.tags %}
+      <a class="tag-pill" href="{{ '/tags/' | relative_url }}">{{ tag[0] }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<style>
+.blog-side-widget {
+  float: right;
+  width: 260px;
+  margin: 0 0 1.5em 1.5em;
+  padding: 1em 1.2em;
+  background: #faf9f6;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  font-size: 0.85em;
+}
+.blog-side-widget h4 {
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+  font-size: 0.95em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3em;
+}
+.blog-side-widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blog-side-widget li {
+  margin-bottom: 0.4em;
+}
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+.tag-pill {
+  background: #eef0f2;
+  border-radius: 999px;
+  padding: 0.2em 0.7em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #333;
+}
+.tag-pill:hover {
+  background: #dfe3e6;
+}
+@media (max-width: 768px) {
+  .blog-side-widget { float: none; width: 100%; margin-left: 0; }
+}
+</style>

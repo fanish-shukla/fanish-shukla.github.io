@@ -9,6 +9,8 @@ header:
 toc: false
 ---
 
+{% include blog-sidebar.html %}
+
 Hello! My name is Fanish Shukla. I work as a Solution Architect. I worked for SWISS International Air Lines. I was also part of the Lufthansa Group Enterprise Architecture (EA) team. In this team, we used a tool called ArchiMate. ArchiMate helps us draw pictures of a business. These pictures show how people, processes, and IT systems work together.
 
 This is **Part 1** of a 10-part series. In each part, I will explain one ArchiMate relationship. I will use simple examples from the aviation world. Airlines are a great example, because they have many services — like check-in, boarding, and baggage handling.

@@ -1,20 +1,37 @@
 title: "Fanish Shukla"
-description: "CTO & Engineering Leader — scaling platforms, teams, and product outcomes"
+description: "Solution Architect & Enterprise Architecture leader — Aviation focus"
 url: "https://fanish.shukla.eu"
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "dirt"   # try: default, air, contrast, neon, dirt — pick one that feels senior/muted, not flashy
 
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dirt"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+
+markdown: kramdown
+paginate: 5
+paginate_path: /page:num/
+
+# --- Author sidebar (left column: photo + contact) ---
+# Upload your photo to assets/images/bio-photo.jpg
 author:
   name: "Fanish Shukla"
-  bio: "Senior Director / CTO focused on platform strategy, org scaling, and technical vision."
-  location: "Zürich"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Solution Architect, Enterprise Architecture. Former SWISS International Air Lines, Lufthansa Group EA team."
+  location: "Switzerland"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/fanishshukla"
+      url: "https://linkedin.com/in/YOUR-LINKEDIN-HANDLE"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:fanish@shukla.eu"
+      url: "mailto:you@fanish.shukla.eu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fanish-shukla"
 
 footer:
   links:
@@ -22,7 +39,7 @@ footer:
       icon: "fas fa-fw fa-rss-square"
       url: "/feed.xml"
 
-# --- This block is what gives every post the right-hand sidebar you want ---
+# --- Defaults applied to every blog post ---
 defaults:
   - scope:
       path: ""
@@ -34,10 +51,13 @@ defaults:
       comments: false
       share: true
       related: true
-      sidebar:
-        nav: "docs"        # optional left nav, remove if unwanted
-      toc: true             # table of contents for long-form posts
-      toc_sticky: true
+      toc: false
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 category_archive:
   type: liquid
@@ -46,4 +66,4 @@ tag_archive:
   type: liquid
   path: /tags/
 
-repository: "fanish-shukla/yourusername.gitlab.io"
+repository: "fanish-shukla/fanish-shukla.github.io"
