@@ -11,7 +11,7 @@ toc: false
 
 {% include blog-sidebar.html %}
 
-Welcome to **Part 2** of our 10-part ArchiMate series! In [Part 1]({% post_url 2026-07-07-archimate-serving-relationship-aviation %}), we covered how the **Serving** relationship links services to the roles and processes that consume them. 
+Welcome to **Part 2** of our 10-part ArchiMate series! In [Part 1]({% post_url archimate/2026-07-07-archimate-relationships-part-1-serving %}), we covered how the **Serving** relationship links services to the roles and processes that consume them. 
 
 Today, we delve into structural decomposition using the **Composition** relationship.
 
