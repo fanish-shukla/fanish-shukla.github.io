@@ -32,7 +32,7 @@ Let's look at an airline check-in process.
 
 In the diagram below, the **Check-in Service** serves the **Passenger**. This means the check-in desk exists to help the passenger. The passenger does not do work for the service — the service works for the passenger.
 
-![ArchiMate Serving relationship example: Check-in Service serving Passenger](/assets/diagrams/archimate-serving-relationship.svg)
+![ArchiMate Serving relationship example: Check-in Service serving Passenger](../../../../assets/diagrams/archimate-serving-relationship.svg)
 
 ## Why This Matters
 
