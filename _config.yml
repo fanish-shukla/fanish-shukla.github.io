@@ -63,6 +63,7 @@ defaults:
       share: true
       related: true
       toc: false
+      classes: wide
   - scope:
       path: ""
       type: pages
