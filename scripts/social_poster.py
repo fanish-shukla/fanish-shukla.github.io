@@ -26,12 +26,35 @@ def fetch_feed_items():
     resp = requests.get(FEED_URL, timeout=30)
     resp.raise_for_status()
     root = ET.fromstring(resp.content)
+
+    # --- Atom feed (Jekyll default: <feed xmlns="http://www.w3.org/2005/Atom">) ---
+    ATOM_NS = "http://www.w3.org/2005/Atom"
+    if root.tag == f"{{{ATOM_NS}}}feed" or root.tag == "feed":
+        ns = {"atom": ATOM_NS}
+        entries = root.findall("atom:entry", ns)
+        items = []
+        for entry in entries:
+            title = (entry.findtext("atom:title", namespaces=ns) or "").strip()
+            # <link href="..." /> in Atom
+            link_el = entry.find("atom:link[@rel='alternate']", ns) \
+                      or entry.find("atom:link", ns)
+            link = (link_el.get("href") if link_el is not None else "").strip()
+            guid_el = entry.findtext("atom:id", namespaces=ns) or link
+            guid = (guid_el or "").strip()
+            items.append({"title": title, "link": link, "guid": guid})
+        return items
+
+    # --- RSS feed (<rss> → <channel> → <item>) ---
     channel = root.find("channel")
+    if channel is None:
+        raise ValueError(
+            f"Unrecognised feed format. Root tag was: {root.tag!r}"
+        )
     items = []
     for item in channel.findall("item"):
         title = (item.findtext("title") or "").strip()
-        link = (item.findtext("link") or "").strip()
-        guid = (item.findtext("guid") or link).strip()
+        link  = (item.findtext("link")  or "").strip()
+        guid  = (item.findtext("guid")  or link).strip()
         items.append({"title": title, "link": link, "guid": guid})
     return items
 
