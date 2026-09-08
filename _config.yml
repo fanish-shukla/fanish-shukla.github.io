@@ -21,12 +21,15 @@ paginate_path: /page:num/
 author:
   name: "Fanish Shukla"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Solution Architect, Enterprise Architecture. Former SWISS International Air Lines, Lufthansa Group EA team."
+  bio: "Enterprise and Solution Architect with 20+ years in aviation, banking, and insurance. Specialized in cloud-native transformation, integration architecture, and AI-driven governance. TOGAF and Azure certified."
   location: "Zürich, Switzerland"
   links:
     - label: "fanishshukla"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/fanishshukla"
+    - label: "https://shukla.eu"          # Company website
+      icon: "fas fa-fw fa-globe"  # or you can use "fab fa-fw fa-globe"
+      url: "https://shukla.eu"
     - label: "fanish@.shukla.eu"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:fanish@.shukla.eu"
